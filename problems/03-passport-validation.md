@@ -1,16 +1,20 @@
-# Roman Numeral Arithmetic
+# Passport Validation
 
 ## Problem Description
 
-Write a function to add two Roman numbers together, without converting to Arabic numbers.
+(This is a more advance problem.)
 
-See [this page](https://scienceblogs.com/goodmath/2006/08/16/roman-numerals-and-arithmetic) for the steps involved.
+This [problem](03-passport-validation.md) is from [Advent of Code 2020](https://adventofcode.com/2020).
 
-Examples:
+You need to validate groups of fields and decide which ones represent a "valid" passport.
 
-* i + i = ii
-* v + v = x
-* iv + ii = vi
-* MCMXCVIII + III = MMI
+## Guidance
 
-Build up your solution incrementally using Test-Driven Development
+There is a second part to this which is revealed only when you have done the first part.
+
+As this is quite a complex problem, take it step by step.
+
+Start by parsing the data into a form that your domain (your business rules) can work with. So convert to numbers where you can.
+
+You could use [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) for the validation.
+
