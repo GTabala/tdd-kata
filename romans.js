@@ -1,4 +1,4 @@
-function doSomething(a, b) {
+function addRomanNumbers(a, b) {
   const simplify = (number) => {
     const replacements = {
       IV: "IIII",
@@ -56,4 +56,4 @@ function doSomething(a, b) {
   return formatResult(descentOrder(simplify(a) + simplify(b)));
 }
 
-module.exports = { doSomething };
+module.exports = { addRomanNumbers };
