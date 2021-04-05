@@ -26,12 +26,7 @@ function addRomanNumbers(a, b) {
   };
 
   const reduceLetters = (result, arr) => {
-    let reduced = result.replace(arr[0], arr[1]);
-
-    if (result !== reduced) {
-      return reduceLetters(reduced, arr);
-    }
-    return result;
+    return result.replace(RegExp(arr[0], "g"), arr[1]);
   };
 
   const formatResult = (result) => {
@@ -43,7 +38,7 @@ function addRomanNumbers(a, b) {
       ["XXXXX", "L"],
       ["XXXX", "XL"],
       ["LL", "C"],
-      ["LXL", "LC"],
+      ["LXL", "XC"],
       ["CCCCC", "D"],
       ["CCCC", "CD"],
       ["DD", "M"],

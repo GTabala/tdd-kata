@@ -16,6 +16,10 @@ describe("number converter", () => {
   it("Should add V to V and get X", () => {
     expect(addRomanNumbers("V", "V")).toBe("X");
   });
+ 
+  it("Should add L to XL and get XC", () => {
+    expect(addRomanNumbers("L", "XL")).toBe("XC");
+  });
 
   it("Should add III to MCMXCVIII and get MMI", () => {
     expect(addRomanNumbers("MCMXCVIII", "III")).toBe("MMI");
